@@ -1,15 +1,16 @@
 body {
   text-align: center;
-  background: #f5f5f5 ;
+  background: #080707 !important;
   color: #4d4d4d ;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-family: 'Merriweather Sans', sans-serif !important;
+
 }
 
 ul {
-  padding-left: 0;
+  padding-left: 13px;
   list-style: none;
 }
 
@@ -19,18 +20,21 @@ li {
 
 .list {
   padding-left: 0 !important;
+  font-size: 20px;
 }
 
 .iscomplete {
   margin-right: 10px;
 }
-/*.createTodoBtn{
-  margin-left: 10px;
-}*/
+
+
 button {
   display: inline-block;
   margin: 10px;
   font-family: FontAwesome;
+  height: 20px;
+  width: 18px;
+  font-size: 100px;
 }
 
 .wrap {
@@ -40,8 +44,9 @@ button {
 
 h1 {
   display: inline;
-  font-size: 50px !important;
+  font-size: 80px !important;
   margin-top: 10px;
+
 }
 .todo-list {
   display: inline;
@@ -50,16 +55,25 @@ h1 {
 
 form {
   display: inline;
+  height: 100px;
 
 }
 
 
 .createTodo-input {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  margin-left: 35px;
+  width: 320px;
+  height: 40px;
+  font-size: 20px;
 }
 
 .createTodoBtn {
-
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  font-size: 17px;
 }
 
 .title {
@@ -69,13 +83,14 @@ form {
 .title-do {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
+  color: #79cae8
 }
 
 header {
   color: white;
   background-color: black;
   font-family: 'Lato', sans-serif;
-  margin: 20px 0;
+  margin-top: 50px;
   width: 100%;
   top:0;
 }
@@ -91,4 +106,17 @@ textarea:focus, input:focus {
 
 *:focus {
     outline: none;
+}
+.trash {
+  margin: 5px;
+  color: #ffffff
+}
+
+.fa.fa-check {
+  margin-left: -6px;
+}
+
+.editTodo-input {
+  width: 320px;
+  height: 40px;
 }
