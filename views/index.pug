@@ -9,7 +9,7 @@ block content
   )
     input.createTodo-input(
       type='text' 
-      placeholder='New todo' 
+      placeholder='What needs to be done?' 
       name='todo'
     )
     button.createTodoBtn(
@@ -36,10 +36,19 @@ block content
             action=`/update/${todo.id}` 
             method='post'
           )
-            input.editTodo-input(
-              type='text' 
-              name='todo' 
-              value=todo.todo
-            )
+            if todo.iscomplete
+              input.editTodo-input(
+                type='text' 
+                name='todo' 
+                value=todo.todo
+                readonly
+              )
+            else
+              input.editTodo-input(
+                type='text' 
+                name='todo' 
+                value=todo.todo    
+              )
+                
           a.trash(href='/delete/' + todo.id) 
-            i.fa.fa-trash.fa-2x(aria-hidden='true')
+            i.fa.fa-trash.fa-1x(aria-hidden='true')

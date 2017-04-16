@@ -31,10 +31,6 @@ li {
 button {
   display: inline-block;
   margin: 10px;
-  font-family: FontAwesome;
-  height: 20px;
-  width: 18px;
-  font-size: 100px;
 }
 
 .wrap {
@@ -72,8 +68,7 @@ form {
   height: 30px;
   width: 30px;
   margin-left: 10px;
-  padding-bottom: 10px;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .title {
@@ -113,7 +108,7 @@ textarea:focus, input:focus {
 }
 
 .fa.fa-check {
-  margin-left: -6px;
+
 }
 
 .editTodo-input {
